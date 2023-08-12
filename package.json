@@ -1,0 +1,21 @@
+{
+  "name": "wx33",
+  "version": "1.0.0",
+  "description": "A CLI tool for Continous Intregartion and Deployment",
+  "main": "index.ts",
+  "author": "Sameer Pokhrel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@types/figlet": "^1.5.6",
+    "figlet": "^1.6.0"
+  }
+}
