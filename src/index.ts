@@ -2,7 +2,7 @@ import { Command } from "commander";
 import { logFiglet } from "./utils/figlet.js";
 import { appConfig } from "./config/config.js";
 import CommandAttachmentManager from "./commands/service/command-manager.js";
-import { setupInit } from "./commands/index.js";
+import { setupConfigure, setupInit } from "./commands/index.js";
 
 const program = new Command();
 
@@ -15,7 +15,9 @@ const program = new Command();
  * Setup the program
  */
 async function setup() {
-  new CommandAttachmentManager(program).attachCommand(setupInit);
+  new CommandAttachmentManager(program)
+    .attachCommand(setupInit)
+    .attachCommand(setupConfigure);
 
   program
     .name(appConfig.APP_NAME)
