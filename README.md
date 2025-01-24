@@ -1,6 +1,3 @@
-Here's a short README for your CLI app:  
-
----
 
 # wx33  
 
@@ -62,8 +59,6 @@ Contributions are welcome! To contribute:
 1. Fork the repository.  
 2. Create a new branch for your feature or bug fix.  
 3. Commit your changes and create a pull request.  
-
----
 
 ## License  
 This project is licensed under the MIT License. See the LICENSE file for details.  
